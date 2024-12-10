@@ -1,0 +1,170 @@
+/* Base styles */
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+}
+  
+.form-container {
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%; 
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+h1 {
+    font-weight: 700;
+    color: hsl(187, 24%, 22%);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+  
+.form-group {
+    margin-bottom: 1.5rem;
+}
+  
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+  
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 4px;
+}
+  
+.inp-check {
+    width: auto;
+}
+
+textarea {
+    resize: none; 
+}
+  
+button {
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+}
+  
+button:hover {
+    background-color: hsl(169, 82%, 35%);
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+fieldset label {
+    margin-top: -22px;
+}
+  
+.error-message {
+    color: hsl(0, 66%, 54%);
+    font-size: 0.875rem;
+    display: none;
+    margin-top: 0.25rem;
+}
+  
+.checkbox-group {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row-reverse;
+}
+  
+.checkbox-group label {
+    margin-left: 0.5rem;
+}
+  
+.toast {
+    display: none;
+    padding: 1rem;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+  
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+      padding: 1.5rem;
+      margin: 20px;
+}
+  
+    input,
+    textarea,
+    button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+      max-width: 400px;
+    }
+  
+    button {
+      margin-top: 0.75rem;
+    }
+  
+    .checkbox-group {
+      flex-wrap: wrap;
+      text-align: left;
+    }
+  
+    .checkbox-group label {
+      margin: 0.5rem 0;
+    }
+  
+    .toast {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 1rem;
+      border-radius: 6px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+  
+    button {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+  
+    .error-message {
+      font-size: 0.8rem;
+    }
+  }
+  
